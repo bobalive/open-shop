@@ -1,0 +1,448 @@
+@import url(fonts.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none !important;
+    list-style:none !important;
+}
+:root{
+    --n:'notosans';
+    --nb:'notosans-bold';
+    --primary-color:#313131;
+    --secondary-color:#FFFFFF;
+}
+.container{
+    max-width: 1290px;
+} 
+body{
+    scroll-behavior: smooth;
+}
+
+
+/* header-start */
+
+.navbar{
+    padding-top: 0 !important; 
+}
+
+.prenav{
+     background: var(--primary-color);
+     width: 100%;
+     padding: 15px;
+}
+
+.prenav-list{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+   
+
+}
+.prenav__link:hover{
+    color: var(--secondary-color) !important;
+}
+.prenav__link{
+    color: white ;
+    font-size: 14px ;
+    line-height: 20px ;
+    font-family: var(--n) ;
+    margin-right: 30px;
+}
+#navbarDropdown{
+    color: var(--secondary-color);
+    margin-right: 80px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown__icon{
+    margin-left: 8px;
+}
+.dropdown__icon::after{
+    content: '\f077'; 
+    position: absolute;  
+}
+.dropdown-toggle.show:focus .dropdown__icon::after{
+    transform: rotate(180deg);
+}
+.call::before{
+    content: '\f879';
+    margin-right: 7px;
+}
+
+.header__nav-icon::before{
+    content: '\f002';
+    margin-right: 8px;
+}
+.header__nav-btn{
+    padding: 15px;
+    width: 190px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 14px;
+     line-height: 19px;
+     border-radius: 0px;
+
+
+
+}
+.header__nav-btn:hover{
+    background: var(--primary-color);
+}
+.form__search-text{
+    margin-bottom: 0;
+    font-family: var(--n);
+    text-transform: uppercase;
+}
+.form__search{
+
+    width:440px;
+    color: #BBBBBB;
+    font-family: var(--n);
+    border: 1px solid #313131;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px 15px;
+    font-size: 14px;
+line-height: 19px;
+margin-left: 143px;
+
+
+}
+.search{
+    display: flex;
+    margin: 40px auto;
+    align-items: center;
+
+}
+form{
+    height: 50px;
+}
+.header__nav-link{
+    display: block;
+    font-size: 18px;
+    line-height: 70px;
+    color: #313131;
+    font-family: var(--n);
+
+
+}
+.header__nav-link:hover{
+    color: var(--primary-color);
+
+}
+.header__content{
+    margin-top: 50px;
+}
+.header__content-img{
+    width: 740px;
+    height: 600px;
+}
+.header__content-title{
+    color: var(--primary-color);
+    font-size: 48px;
+    line-height: 70px;
+    font-family: var(--nb);
+    max-width: 624px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 121px;
+}
+.header__item-link , .main__card-link{
+    padding: 13px 46px;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--secondary-color);
+    font-family: var(--n);
+    background: var(--primary-color);
+    width: 250px;
+    margin: 0 auto;
+}
+.header__item-link:hover{
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.main__card-link:hover{
+    color: var(--secondary-color);
+}
+.carousel-indicators [data-bs-target]{
+    background: var(--primary-color);
+    display: block;
+    border-radius: 50%;
+    width: 20px !important;
+    height: 0px !important;
+    transform: scale(0.5);
+
+}
+.header__nav-link-items{
+    left: -20px;
+    margin-top: -4px;
+    width: 300px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+    top: 71px;   
+    z-index:1;
+    display: none !important;
+}
+.open-list:hover .header__nav-link-items{
+    display: flex !important;
+}
+.cellphones, .tablets{
+    padding: 18px 0 18px 0 ;
+}
+.cellphones  li .cellphones-link ,.tablets li .cellphones-link{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 300; 
+    color: #313131;
+    font-family: var(--n);
+}
+.cellphones-title{
+    letter-spacing: 0.05em;
+    text-decoration-line: underline !important;
+    color: #313131;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: var(--n);
+}
+.tablets-title{
+    color: #313131;
+    font-size: 16px;
+    line-height: 15px;
+    font-family: var(--n);
+    letter-spacing: 0.05em;
+}
+.open-link::after{
+    content: '';
+    position: absolute;
+    width: 260px;
+    height: 3px;
+    background: var(--primary-color);
+    bottom: 0;
+    z-index: 2;
+    display: none;
+}
+.open-list:hover .open-link::after{
+    display: block;
+}
+.btn-outline-success:focus{
+    box-shadow: none;
+}
+
+
+/* header-end */
+
+/* main-start */
+
+
+.main{
+    margin-top: 70px;
+}
+
+.main__cards{
+    margin-bottom: 30px;
+}
+.main__box{
+    width: 590px;
+    padding: 20px 20px 15px 20px;
+    background: rgb(247, 247, 247) ;
+
+}
+.main__top-title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: var(--nb);
+    color: var(--primary-color);
+    margin-bottom: 5px ;
+}
+.main__top-text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: var(--n);
+    color: var(--primary-color);
+}
+.discount{
+    background: var(--primary-color);
+    border-radius: 50%;
+    font-size: 20px;
+    line-height: 24px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-color);
+    top: 20px;
+    left: 20px;
+}
+.card__about{
+    bottom: 0;
+    left: 20px;
+}
+
+.main__card{
+    background: rgb(247, 247, 247) ;
+    height: 235px;
+    padding:  0 12px ;
+}
+.double{
+    width: 300px;
+}
+
+.main__phones-card {
+    width: 500px;
+}
+.main__card-link{
+    width: 100px;
+    margin-top: 10px;
+}
+.main__phone-text{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: var(--n);
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+.cost{
+    font-size: 14px;
+    line-height: 19px;
+    font-family: var(--n);
+    font-weight: 300 ;
+}
+.phone__img{
+    display: block;
+    max-height: 200px;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+.main__phones-about{
+    position: absolute;
+    bottom: 0;
+}
+.phone__img{
+    width: 300px;
+}
+.main__card-link, .phones__card-icon {
+    opacity: 0;
+    transition: 0.5s;
+}
+.phones__card{
+    position: absolute;
+}
+.phones__card-icon::after{
+    content: '\f004';
+}
+
+.phones__card-icon{
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    color: var(--primary-color);
+}
+.phones__card-icon:hover{
+    color: var(--primary-color);
+}
+.img-box{
+    width: max-content;
+}
+
+
+.main__phones-card{
+    padding: 30px ;
+    border: none;
+    transform: translate(0,0);
+    transition: 0.5s;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+
+
+}
+.main__phones-card:hover{
+    transform: translateY(30px);
+    border: solid #E5E5E5 2px;
+}
+.main__phones-card:hover .main__card-link{
+    opacity: 1;
+}
+.main__phones-card:hover div .phones__card-icon{
+    opacity: 1;
+}
+.main__content-phones .header__item-link{
+    width: 250px;
+    margin: 30px auto;
+}
+.last-discount{
+   bottom: 20px;
+   left: 20px;
+   background: var(--primary-color);
+   border-radius: 50%;
+   font-size: 20px;
+   line-height: 24px;
+   width: 70px;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--secondary-color);
+}
+.about-top{
+    top: 20px;
+    left: 20px;
+}
+.main__section-title{
+    font-size: 48px;
+    line-height: 65px;
+    color: var(--primary-color);
+    font-family: var(--nb);
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+.main__section-decription{
+    left: 24px;
+    top: 94px;
+}
+
+.main__bottom-content{
+    width: 300px;
+}
+
+.bottom-text{
+    font-size: 16px;
+    line-height: 22px;
+    font-family: var(--n);
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+.bottom-cost{
+    font-size: 14px;
+    line-height: 19px;
+    font-family: var(--n);
+    font-weight: 300;
+    color: var(--primary-color);
+
+}
+.bottom-description{
+    bottom: 10px;
+
+}
+.bottom__cards{
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+
+
+/* main-end */
