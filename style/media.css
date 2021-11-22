@@ -1,5 +1,40 @@
-@media (prefer-color-scheme-dark) {
+@media ( prefers-color-scheme: dark ) {
     body{
-        color: black;
+        background: var(--primary-color);
+    }
+
+    a, p, h1, h2, h3, h4, li, span{
+        color: var(--secondary-color) !important;
+    }
+    .main__top-title, .main__top-text{
+        color: var(--primary-color) !important;
+    }
+    .header__nav-btn {
+        border: var(--secondary-color) solid 1px;
+    }
+    .header__nav-btn:hover{
+        border: var(--secondary-color) solid 1px;
+    }
+    .header__item-link, .main__card-link{
+        border: solid 1px var(--secondary-color);
+    }
+    .dropdown-item{
+        color: var(--primary-color) !important;
+    }
+    .phone__img, .bottom-img{
+        filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25))
+    }
+    .main__section-img::after{
+        content: url(../img/pa-title-white.png);
+    }
+    .header__nav-img::after{
+        content: url(../img/logo-dark.png);
+        
+    }
+    .footer{
+        background: #0C0C0C;
+    }
+    .cellphones-link, .cellphones-title, .tablets-title{
+        color: var(--primary-color) !important;
     }
 }
